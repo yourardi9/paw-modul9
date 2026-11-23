@@ -1,0 +1,131 @@
+/* CSS kustom: hanya untuk hal yang tidak tersedia di Bootstrap */
+
+:root {
+  --tel-purple: #54258f;
+  --tel-purple-dark: #3d1b69;
+  --tel-gray: #707070;
+}
+
+/* Font */
+body {
+  font-family: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #222;
+}
+
+/* Warna utama Telkom */
+.text-tel {
+  color: var(--tel-purple);
+}
+
+.btn-tel {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--tel-purple);
+  --bs-btn-border-color: var(--tel-purple);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--tel-purple-dark);
+  --bs-btn-hover-border-color: var(--tel-purple-dark);
+  --bs-btn-active-bg: var(--tel-purple-dark);
+  --bs-btn-active-border-color: var(--tel-purple-dark);
+}
+
+/* Navbar: hover menu ungu + dropdown terbuka saat hover (desktop) */
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover {
+  color: var(--tel-purple);
+  background: transparent;
+}
+
+@media (min-width: 992px) {
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  .navbar .dropdown-menu {
+    min-width: 220px;
+  }
+}
+
+/* Hero dengan gambar latar */
+.hero {
+  background-color: #f4f4f4;
+  background-image: url("https://bis-sby.telkomuniversity.ac.id/wp-content/uploads/2024/09/headerbarufix-scaled.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-title {
+  max-width: 1050px;
+  line-height: 1.2;
+}
+
+/* Lebar artikel */
+.container-article {
+  max-width: 1000px;
+}
+
+/* Zoom gambar artikel saat hover */
+.article-image img {
+  transition: transform 0.5s ease;
+}
+.article-image:hover img {
+  transform: scale(1.1);
+}
+
+/* Isi artikel */
+.article-content p {
+  color: #333;
+  font-size: 1.0625rem;
+  line-height: 1.9;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+.article-content a {
+  color: var(--tel-purple);
+  text-decoration: underline;
+}
+.article-content a:hover {
+  color: #35175c;
+}
+
+@media (max-width: 575.98px) {
+  .article-content p {
+    text-align: left;
+    font-size: 1rem;
+  }
+}
+
+/* Banner pendaftaran */
+.cta-banner {
+  background-color: #300043;
+  background-image: linear-gradient(
+    90deg,
+    rgba(48, 0, 67, 0.95),
+    rgba(48, 0, 67, 0.8)
+  );
+}
+
+/* Footer */
+.bg-footer {
+  background-color: #191919;
+}
+
+.footer-text {
+  color: var(--tel-gray);
+  font-size: 0.9375rem;
+  line-height: 1.8;
+}
+
+.footer-links li {
+  margin-bottom: 1rem;
+}
+
+.footer-links a {
+  color: var(--tel-gray);
+  font-size: 0.9375rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.footer-links a:hover {
+  color: #fff;
+}

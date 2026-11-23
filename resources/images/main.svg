@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" role="img" aria-labelledby="t d">
+  <title id="t">Laravel Routing</title>
+  <desc id="d">Alur request dari browser ke route di routes/web.php, lalu menghasilkan response.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#0d6efd"/>
+    </marker>
+  </defs>
+  <rect width="800" height="450" fill="#f8f9fa"/>
+
+  <text x="400" y="62" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="36" font-weight="700" fill="#212529">Laravel Routing</text>
+  <text x="400" y="94" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#6c757d">Request URL → Route → Response</text>
+
+  <!-- Browser -->
+  <rect x="40" y="128" width="200" height="124" rx="10" fill="#ffffff" stroke="#0d6efd" stroke-width="3"/>
+  <circle cx="62" cy="148" r="5" fill="#dc3545"/>
+  <circle cx="80" cy="148" r="5" fill="#ffc107"/>
+  <circle cx="98" cy="148" r="5" fill="#198754"/>
+  <text x="140" y="196" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#212529">Browser</text>
+  <text x="140" y="228" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="15" fill="#495057">GET /routing</text>
+
+  <line x1="244" y1="190" x2="296" y2="190" stroke="#0d6efd" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Route -->
+  <rect x="300" y="128" width="200" height="124" rx="10" fill="#ffffff" stroke="#0d6efd" stroke-width="3"/>
+  <text x="400" y="180" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#212529">Route</text>
+  <text x="400" y="208" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="14" fill="#495057">routes/web.php</text>
+  <text x="400" y="232" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="13" fill="#6c757d">Route::get(...)</text>
+
+  <line x1="504" y1="190" x2="556" y2="190" stroke="#0d6efd" stroke-width="3" marker-end="url(#arrow)"/>
+
+  <!-- Response -->
+  <rect x="560" y="128" width="200" height="124" rx="10" fill="#ffffff" stroke="#0d6efd" stroke-width="3"/>
+  <text x="660" y="180" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#212529">Response</text>
+  <text x="660" y="208" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="14" fill="#495057">routing.blade.php</text>
+  <text x="660" y="232" text-anchor="middle" font-family="Menlo, Consolas, monospace" font-size="13" fill="#6c757d">view('routing')</text>
+
+  <!-- Code -->
+  <rect x="40" y="288" width="720" height="124" rx="10" fill="#212529"/>
+  <g font-family="Menlo, Consolas, monospace" font-size="20" fill="#e9ecef">
+    <text x="68" y="328"><tspan fill="#6ea8fe">Route</tspan>::get(<tspan fill="#75b798">'/routing'</tspan>, <tspan fill="#ea868f">function</tspan> () {</text>
+    <text x="116" y="358"><tspan fill="#ea868f">return</tspan> view(<tspan fill="#75b798">'routing'</tspan>);</text>
+    <text x="68" y="388">});</text>
+  </g>
+</svg>
